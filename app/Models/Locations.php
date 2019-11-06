@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Locations extends Model
 {
@@ -18,6 +19,8 @@ class Locations extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    use SoftDeletes;
 
     static public function getLocations()
     {

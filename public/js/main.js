@@ -167,7 +167,7 @@ jQuery(function($) {
 			if(data.length > 0)
 			{
 				$.each( data, function( key, value ) {
-					html_tides += "<tr>" + "<td>" + data[key].name + "</td>" + "<td>" + data[key].latitude + "</td>" + "<td>" + data[key].longitude + "</td>" + "<td>" + data[key].code + "</td>" + "</tr>"
+					html_tides += "<tr>" + "<td><a href=\"/location/" + data[key].id + "\" target=\"_blank\">" + data[key].name + "</a></td>" + "<td>" + data[key].latitude + "</td>" + "<td>" + data[key].longitude + "</td>" + "<td>" + data[key].code + "</td>" + "</tr>"
 				});
 			}
 			else
